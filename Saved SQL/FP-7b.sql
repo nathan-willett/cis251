@@ -1,0 +1,7 @@
+use cis251;
+SELECT *
+FROM jobcodetable
+WHERE JOBCODE IN 
+	(SELECT JOBCODE
+    FROM JOB 
+    WHERE DEPTID = '98835');

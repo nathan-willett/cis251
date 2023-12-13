@@ -1,0 +1,5 @@
+USE cis251;
+SELECT FULLNAME,
+	SUBSTRING_INDEX(FULLNAME, ' ', 1) AS first_name,
+	SUBSTRING_INDEX(FULLNAME, ' ', -1) AS last_name
+FROM names;

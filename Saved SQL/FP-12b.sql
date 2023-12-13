@@ -1,0 +1,4 @@
+use cis251;
+SELECT DISTINCT PHONE_TYPE, COUNT(*) AS data_type
+FROM personalphone
+GROUP BY PHONE_TYPE
